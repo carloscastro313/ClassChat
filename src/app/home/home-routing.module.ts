@@ -6,6 +6,20 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    children:[
+      {
+        path: '',
+        loadChildren: () => import('../inicio/inicio.module').then( m => m.InicioPageModule)
+      },
+      {
+        path: 'class-a',
+        loadChildren: () => import('../class-a/class-a.module').then( m => m.ClassAPageModule)
+      },
+      {
+        path: 'class-b',
+        loadChildren: () => import('../class-b/class-b.module').then( m => m.ClassBPageModule)
+      },
+    ]
   }
 ];
 

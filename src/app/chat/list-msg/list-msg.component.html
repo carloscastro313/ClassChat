@@ -1,0 +1,6 @@
+<div #scrollMe class="divChatConteiner">
+    <div *ngFor="let item of listMsg; trackBy : trackByCreated ">
+        <app-msg [msg]="item" [text]="item.text" [from]="item.from" (click)="scrollToBottom()"></app-msg>
+        <div #bottom></div>
+    </div>
+</div>

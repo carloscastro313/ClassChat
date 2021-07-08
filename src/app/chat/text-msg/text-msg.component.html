@@ -1,0 +1,6 @@
+<form [formGroup]="chat" (ngSubmit)="send()" class="divMsgGrid">
+
+    <ion-input formControlName="msg" type="text" color="primary"></ion-input>
+
+    <ion-button block color="primary" type="submit" [disabled]="chat.invalid">Enviar</ion-button>
+</form>

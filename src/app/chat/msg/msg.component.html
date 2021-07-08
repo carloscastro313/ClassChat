@@ -1,0 +1,8 @@
+<div [class]="user?'receptores':'emisor'">
+    <h1></h1>
+    <ion-card>
+        <span *ngIf="!user"><h5>{{ msg.from}}</h5></span>
+        <h3>{{msg.text}}</h3>
+        <span><h5>{{this.datePipe.transform(msg.timeSend,'MM-dd-yyyy hh:mm:ss') }}</h5></span>
+    </ion-card>
+</div>

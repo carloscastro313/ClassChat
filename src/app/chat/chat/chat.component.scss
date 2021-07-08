@@ -1,0 +1,21 @@
+.divMsgGrid {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 2px;
+}
+
+ion-input {
+  --background: rgba(128, 128, 128, 0.247);
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.divChatConteiner {
+  width: 100%;
+  height: 85%;
+  border: 1px solid #ddd;
+  background: #f1f1f131;
+  border-radius: 10px;
+  overflow: scroll;
+}

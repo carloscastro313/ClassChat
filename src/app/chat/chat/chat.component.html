@@ -1,0 +1,14 @@
+<div #scrollMe class="divChatConteiner">
+  <div *ngFor="let item of listMsg; trackBy : trackByCreated ">
+      <app-msg [msg]="item" [text]="item.text" [from]="item.from" ></app-msg>
+      <div #bottom></div>
+  </div>
+</div>
+
+
+<form [formGroup]="chat" (ngSubmit)="send()" class="divMsgGrid" >
+
+  <ion-input formControlName="msg" type="text" color="primary"></ion-input>
+
+  <ion-button block color="primary" type="submit" [disabled]="chat.invalid">Enviar</ion-button>
+</form>

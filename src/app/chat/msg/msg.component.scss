@@ -1,0 +1,29 @@
+.divMsgConteiner {
+    word-wrap: break-word;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.emisor {
+    display: grid;
+    grid-template-columns: 70%;
+    grid-gap: 5px;
+    padding-bottom: 10px;
+}
+
+.receptores {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 5px;
+    padding-bottom: 10px;
+}
+
+h5,
+h1 {
+    padding-left: 1em;
+}
+
+h5 {
+    font-size: 1em;
+}
